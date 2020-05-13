@@ -9,7 +9,7 @@ on p.CategoryID = c.Id;
 -- ? -> Returns 2323 records?
 SELECT o.Id as [Shipping ID], s.CompanyName as [Company Name] FROM [Order] as o
 JOIN [Shipper] AS s ON o.ShipVia = s.Id
-WHERE o.OrderDate < "20120909"
+WHERE o.OrderDate < "2012-09-09"
 
 -- Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
 select od.Id, p.ProductName as [Product Name], od.Quantity from [OrderDetail] as od
